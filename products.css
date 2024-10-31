@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+.container-fluid img{
+    height: 80px;
+    width: 80px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+.nav-account-link{
+    display: block;
+    background-color:white; 
+    border: 2px solid #6b4f4f;
+    color: #6b4f4f; 
+    transition: 0.3s ease; 
+    text-decoration: none;
+}
+.nav-account-link:hover{
+    color: white;
+    background-color: #6b4f4f;
+    text-decoration: none;
+}
+
+.dropdown-menu a+a{
+    background-color: white;
+    color: black;
+    border: 1px solid #6b4f4f;
+}
+
+.dropdown-menu{
+    background-color: white;
+    border: 1px solid #6b4f4f;
+    /* color: #d48d78; */
+}
+
+.dropdown-menu .dropdown-item{
+    color: #6b4f4f;
+    font-size: medium;
+    font-weight: bold;
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+}
+
+.dropdown-menu li:hover {
+    background-color: #fcf8f8;
+}
+
+.dropdown-menu li:hover .dropdown-item{
+    background-color: inherit;
+}
+
+/* not working */
+.dropdown-divider{
+    height: 0;
+    margin: var(--bs-dropdown-divider-margin-y);
+    overflow: hidden;
+    border-top: 1px solid var(--bs-dropdown-divider-bg) !important;
+    opacity: 1;
+}
+/* not working */
+
+.nav-item a{
+    font-weight:bold;
+    font-size:medium;
+    color: #6b4f4f;
+    transition: 0.3s ease;
+}
+
+.nav-item a:hover {
+    box-shadow:0 3px 0 0 #6b4f4f;
+    color: #d48d78;
+}
+.nav-item a.active {
+    box-shadow: 0 3px 0 0 #6b4f4f;
+}
+
+.nav-products-link{
+    display: block;
+    background-color:white; 
+    /* border: 2px solid #6b4f4f; */
+    color: #6b4f4f; 
+    transition: 0.3s ease; 
+    text-decoration: none;
+}
+
+@media(min-width:992px){
+    .navbar-expand-lg .nabar-nav{
+        flex-direction: row;
+    }
+}
+
+/* products section */
+.anybtn{
+    display: block;
+    width: 140px;
+    margin-left: 46px;
+    margin-bottom: 2px;
+    margin-top: 16px;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: #6b4f4f;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.anybtn:hover {
+    background-color: #ac7a7a;
+}
+
+.anybtn:active {
+    transform: scale(0.98);
+}
+
+.card{
+    background-color: #e6d3c2;
+    border-radius: 5%;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.maincard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 30px 50px rgba(107, 79, 79);
+}
+
+.category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+/* for makeup page */
+.productmore-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.productmore-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 10px;
+}
+
+.more-button1{
+    display: block;
+    width: 140px;
+    /* margin-left: 46px;
+    margin-bottom: 2px;
+    margin-top: 16px; */
+    padding: 5px 10px;
+    text-align: center;
+    background-color: white;
+    color: #6b4f4f;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 20px;
+    border: 2px solid transparent; /* Add a transparent border */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for border color */
+    /* transition: background-color 0.3s ease; */
+}
+
+.more-button1:hover {
+    border: 2px solid #6b4f4f;
+}
+
+.more-button1:active {
+    transform: scale(0.98);
+}
+
+.more-button2{
+    display: block;
+    width: 140px;
+    /* margin-left: 46px;
+    margin-bottom: 2px;
+    margin-top: 16px; */
+    padding: 5px 10px;
+    text-align: center;
+    background-color: #e6d3c2;
+    color: #6b4f4f;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 20px;
+    border: 2px solid #6b4f4f;
+    transition: background-color 0.3s ease;
+}
+
+.more-button2:hover {
+    background-color: white;
+}
+
+.more-button2:active {
+    transform: scale(0.98);
+}
+
+.topcards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.bottomcards{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+
+/* .card-body img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* for footer section */
+
+footer{
+    background-color: #6b4f4f;
+    margin-top: 70px;
+    padding-bottom: 50px;
+}
+.footercontainer{
+    width: 100%;
+    padding:40px 20px 20px 20px;
+}
+
+.footernav{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.footernav .footernavlist a{
+    color: #fcf8f8;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5 s;
+}
+.footernav .footernavlist a:hover{
+    opacity: 1;
+}
+.footerbottom{
+    background-color: #6b4f4f;
+    padding: 20px;
+    text-align: center;
+}
+.footerbottom p{
+    color: #fcf8f8;
+}
+.Designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;    
+}
+
+
+
+  
+  
